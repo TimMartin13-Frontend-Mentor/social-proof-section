@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.intro {
+  color: #502050;
+}
+.intro h1 {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  padding-bottom: 2rem;
+}
+.intro p {
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.ratings .rating {
+  background-color: #f7f2f7;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  padding: 0.9rem;
+}
+.ratings .rating .stars {
+  padding: 0.5rem;
+}
+.ratings .rating .stars img {
+  padding-left: 0.5rem;
+}
+.ratings .rating h4 {
+  color: #502050;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .card {
+  background-color: #502050;
+  color: white;
+  border-radius: 10px;
+}
+.testimonials .card .person {
+  display: flex;
+}
+.testimonials .card .person img {
+  border-radius: 50%;
+  width: 3rem;
+  margin: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
