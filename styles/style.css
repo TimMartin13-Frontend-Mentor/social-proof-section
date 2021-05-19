@@ -7,8 +7,28 @@
 body {
   font-size: 15px;
   font-family: "Spartan", sans-serif;
-  background-image: url("/images/bg-pattern-top-mobile.svg");
-  background-repeat: no-repeat;
+}
+body .blob-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .blob-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .blob-left-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+body .blob-right-desktop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
 }
 
 .container {
@@ -98,12 +118,20 @@ body {
   color: #ee68a4;
 }
 
-@media screen and (min-width: 800px) {
-  body {
-    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
-    height: 100vh;
+@media screen and (min-width: 1000px) {
+  body .blob-left {
+    visibility: hidden;
+  }
+  body .blob-right {
+    visibility: hidden;
+  }
+  body .blob-left-desktop {
+    visibility: visible;
+  }
+  body .blob-right-desktop {
+    visibility: visible;
+    width: 83vw;
+    height: 85vh;
   }
 
   .container {
@@ -148,7 +176,8 @@ body {
     gap: 1.2rem;
   }
   .testimonials .card {
-    height: 16rem;
+    height: 17rem;
+    margin-bottom: 1rem;
     flex-basis: 100%;
   }
   .testimonials .card:nth-child(2) {
