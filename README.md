@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](https://www.frontendmentor.io/solutions/social-proof-section-html-and-sass-crcwa0Fou)
-- Live Site URL: [Github pages](https://timmartin13.github.io/social-proof-section/)
+- Live Site URL: [Github pages](https://timmartin13-frontend-mentor.github.io/social-proof-section/)
 
 ## My process
 
